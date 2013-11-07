@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB4BE317-50CA-42C0-978C-9278AF7BD55A}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>app_iMeet</RootNamespace>
+    <AssemblyName>app_iMeet</AssemblyName>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BundleDisplayName>iMeet</BundleDisplayName>
+    <BundleIdentifier>au.edu.qut.is.iMeet</BundleIdentifier>
+    <BundleVersion>1.0</BundleVersion>
+    <BundleIcon>icon.png</BundleIcon>
+    <BundleIconHigh>icon.png</BundleIconHigh>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchI18n />
+    <MtouchSdkVersion>4.3</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Distribution: Ian Bulcock</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <CodesignProvision>0A6040E4-3343-48EF-9093-7E118E8BC719</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution: Ian Bulcock</CodesignKey>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <CodesignProvision>8DCFC9E2-43DB-4B34-8732-7D2828A83A5F</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'adHoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\adHoc</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <MtouchUseSGen>false</MtouchUseSGen>
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignKey>iPhone Developer: QUT Mobile Dev (25BQ2GV5FN)</CodesignKey>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchI18n />
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>ECFDC30E-AF23-4102-83E8-C85E25EEAD4C</CodesignProvision>
+    <MtouchSdkVersion>4.3</MtouchSdkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone" />
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MapViewController.cs" />
+    <Compile Include="ContactsViewController.cs" />
+    <Compile Include="ConnectViewController.xib.cs">
+      <DependentUpon>ConnectViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectViewController.xib.designer.cs">
+      <DependentUpon>ConnectViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsTableViewDelegate.cs" />
+    <Compile Include="ContactsTableDataSource.cs" />
+    <Compile Include="PointAnnotation.cs" />
+    <Compile Include="TouchView.cs" />
+    <Compile Include="LocationDelegate.cs" />
+    <Compile Include="MeetingService.cs" />
+    <Compile Include="LoadingHUDView.cs" />
+    <Compile Include="EndpointHelper.cs" />
+    <Compile Include="MessageHelper.cs" />
+    <Compile Include="ServiceHelper.cs" />
+    <Compile Include="ShowViewController.xib.cs">
+      <DependentUpon>ShowViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ShowViewController.xib.designer.cs">
+      <DependentUpon>ShowViewController.xib</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ConnectViewController.xib" />
+    <Page Include="ShowViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <None Include="icon.png" />
+  </ItemGroup>
+</Project>
